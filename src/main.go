@@ -15,7 +15,7 @@ func main() {
 	})
 	r.GET("/healthz", func(c *gin.Context) {
 		hostname, _ := os.Hostname()
-		c.JSON(200, gin.H{"version": "v1.0", "hostname": hostname})
+		c.JSON(200, gin.H{"version": "v2.0", "hostname": hostname})
 	})
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
