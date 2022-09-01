@@ -1,0 +1,10 @@
+version: "3"
+services:
+  go:
+    build:
+      context: .
+      dockerfile: Dockerfile-local
+    volumes:
+      - ./src:/go/src
+    ports:
+    - 18080:8080
