@@ -46,7 +46,7 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/webversion-demo:latest,${{ secrets.DOCKER_USERNAME }}/webversion-demo:${{ github.sha }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/webversion-demo:latest
           labels: |
             org.opencontainers.image.title=${{ github.event.repository.name }}
             org.opencontainers.image.description=${{ github.event.repository.description }}
